@@ -8,7 +8,7 @@
     <p>Estoque disponível:</p>
     <label >
         Quantidade:
-        <input type="number" [(ngModel)]="quantidade">
+        <input type="number" name="quantidade" value="1" min="1" max={{produto?.quantidadeEstoque}}  [(ngModel)]="quantidade">
         unidade(s)
     </label>
     <p class="product__avaiability">
